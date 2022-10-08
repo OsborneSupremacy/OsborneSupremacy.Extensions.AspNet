@@ -1,2 +1,3 @@
 # OsborneSupremacy.Extensions.AspNet
-Extensions to AspNet I use in many of my proects.
+
+Extensions to AspNet I use in many of my projects.
