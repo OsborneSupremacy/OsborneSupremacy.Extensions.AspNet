@@ -7,7 +7,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>OsborneSupremacy.Extensions.AspNet</PackageId>
     <Title>Extension methods useful for AspNet applications</Title>
-    <Version>1.3</Version>
+    <Version>1.4</Version>
     <Description>Extension methods useful for AspNet applications</Description>
     <PackageProjectUrl>https://github.com/OsborneSupremacy/OsborneSupremacy.Extensions.AspNet</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -16,6 +16,7 @@
     <PackageReleaseNotes>Namespace fix.</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>UPL-1.0</PackageLicenseExpression>
+    <Authors>OsborneSupremacy</Authors>
   </PropertyGroup>
 
   <ItemGroup>
