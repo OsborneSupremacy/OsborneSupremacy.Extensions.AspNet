@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 
-namespace OsborneSupremacy.Extensions.Net.AspNet;
+namespace OsborneSupremacy.Extensions.AspNet;
 
 public static class WebApplicationBuilderExtensions
 {
