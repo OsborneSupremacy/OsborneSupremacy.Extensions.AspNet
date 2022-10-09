@@ -7,7 +7,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>OsborneSupremacy.Extensions.AspNet</PackageId>
     <Title>Extension methods useful for AspNet applications</Title>
-    <Version>1.5</Version>
+    <Version>1.6</Version>
     <Description>Extension methods useful for AspNet applications</Description>
     <PackageProjectUrl>https://github.com/OsborneSupremacy/OsborneSupremacy.Extensions.AspNet</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
