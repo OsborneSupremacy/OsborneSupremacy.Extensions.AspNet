@@ -1,22 +1,20 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿namespace OsborneSupremacy.Extensions.AspNet;
 
-namespace OsborneSupremacy.Extensions.AspNet;
-
-public static class WebApplicationBuilderExtensions
+public static class ConfigurationRootExtensions
 {
     public static T GetTypedSection<T>(
-        this WebApplicationBuilder input,
+        this IConfigurationRoot input,
         string sectionName
     ) where T : new()
     {
         T output = new();
-        input.Configuration.GetSection(sectionName)
+        input.GetSection(sectionName)
             .Bind(output);
         return output;
     }
 
     public static T GetAndValidateTypedSection<T>(
-        this WebApplicationBuilder input,
+        this IConfigurationRoot input,
         string sectionName,
         AbstractValidator<T> validator
     ) where T : new()
