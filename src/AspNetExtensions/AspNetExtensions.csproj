@@ -7,13 +7,13 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>OsborneSupremacy.Extensions.AspNet</PackageId>
     <Title>Extension methods useful for AspNet applications</Title>
-    <Version>2.0</Version>
+    <Version>2.1</Version>
     <Description>Extension methods useful for AspNet applications</Description>
     <PackageProjectUrl>https://github.com/OsborneSupremacy/OsborneSupremacy.Extensions.AspNet</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/OsborneSupremacy/OsborneSupremacy.Extensions.AspNet</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageReleaseNotes>Upgraded to .NET 7</PackageReleaseNotes>
+    <PackageReleaseNotes>Added ValidationExtensions</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>UPL-1.0</PackageLicenseExpression>
     <Authors>OsborneSupremacy</Authors>
