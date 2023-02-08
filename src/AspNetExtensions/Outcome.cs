@@ -2,6 +2,26 @@
 
 namespace OsborneSupremacy.Extensions.AspNet;
 
+/// <summary>
+/// This is an unapologetic pale immitation of Result from LanguageExt.Common. It doesn't
+/// attempt to do anything close to what that class does. That class is great, however
+/// if you're not in the functional programming, or your application isn't written
+/// with a functional approach, it might not be the best fit.
+/// 
+/// The elements I borrowed from that class are:
+/// 
+/// 1. Encapsulating the result of an operation, with <see cref="IsSuccess"/> and <see cref="IsFaulted"/> properties
+/// used to evaulate whether the operation succeeded.
+/// 
+/// 2. An <see cref="Exception"/> property to hold the details of the failure, when the operation fails.
+/// 
+/// Since I use this class alot for validation, I wanted any easy way to get validation errors, 
+/// hence the <see cref="GetValidationErrors"/> method.
+/// 
+/// I will most likely expand it with methods to make it easier to get to the details or other types 
+/// of extensions.
+/// </summary>
+/// <typeparam name="T"></typeparam>
 public record Outcome<T> : IOutcome<T>
 {
     public bool IsSuccess { get; }
