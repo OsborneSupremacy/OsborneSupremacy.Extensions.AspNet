@@ -13,4 +13,13 @@ public static class ValidationExtensions
         )
             modelState.AddModelError(error.PropertyName, error.ErrorMessage);
     }
+
+    public static void AddValidationErrors(
+        this ModelStateDictionary modelState,
+        IEnumerable<ValidationFailure> validationFailures
+        )
+    {
+        foreach (var failure in validationFailures)
+            modelState.AddModelError(failure.PropertyName, failure.ErrorMessage);
+    }
 }
