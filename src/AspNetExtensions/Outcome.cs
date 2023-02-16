@@ -65,4 +65,6 @@ public record Outcome<T> : IOutcome<T>
 
         return validationException.Errors;
     }
+
+    public static implicit operator Outcome<T>(T value) => new Outcome<T>(value);
 }
