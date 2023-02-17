@@ -5,7 +5,7 @@ namespace OsborneSupremacy.Extensions.AspNet;
 /// <summary>
 /// This is an unapologetic pale immitation of Result from LanguageExt.Common. It doesn't
 /// attempt to do anything close to what that class does. That class is great, however
-/// if you're not in the functional programming, or your application isn't written
+/// if you're not in the functional programming mindset, or your application isn't written
 /// with a functional approach, it might not be the best fit.
 /// 
 /// The elements I borrowed from that class are:
@@ -22,7 +22,7 @@ namespace OsborneSupremacy.Extensions.AspNet;
 /// of extensions.
 /// </summary>
 /// <typeparam name="T"></typeparam>
-public record Outcome<T> : IOutcome<T>
+public record Outcome<T>
 {
     public bool IsSuccess { get; }
 
@@ -66,5 +66,5 @@ public record Outcome<T> : IOutcome<T>
         return validationException.Errors;
     }
 
-    public static implicit operator Outcome<T>(T value) => new Outcome<T>(value);
+    public static implicit operator Outcome<T>(T value) => new(value);
 }
