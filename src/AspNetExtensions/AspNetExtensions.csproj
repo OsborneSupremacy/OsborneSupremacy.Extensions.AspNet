@@ -7,8 +7,8 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>OsborneSupremacy.Extensions.AspNet</PackageId>
     <Title>Extension methods useful for AspNet applications</Title>
-    <Version>3.0</Version>
-    <Description>Removed the IOutcome interface. Not needed. Using Outcome will allow for use of implicit conversion operator.</Description>
+    <Version>3.1</Version>
+    <Description>Created value-less Outcome without generic type.</Description>
     <PackageProjectUrl>https://github.com/OsborneSupremacy/OsborneSupremacy.Extensions.AspNet</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/OsborneSupremacy/OsborneSupremacy.Extensions.AspNet</RepositoryUrl>
