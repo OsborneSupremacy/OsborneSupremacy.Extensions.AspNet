@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
@@ -36,6 +36,9 @@ jobs:
 
     - name: Setup NuGet
       uses: NuGet/setup-nuget@v2
+
+    - name: Install Mono
+      run: sudo apt install mono-devel
 
     - name: Publish NuGet package
       run: nuget push **\*.nupkg -Source 'https://api.nuget.org/v3/index.json' -ApiKey ${{secrets.NUGET_API_KEY}} -SkipDuplicate
