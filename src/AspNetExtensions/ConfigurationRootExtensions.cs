@@ -2,6 +2,7 @@
 
 public static class ConfigurationRootExtensions
 {
+    // ReSharper disable once MemberCanBePrivate.Global
     public static T GetTypedSection<T>(
         this IConfigurationRoot input,
         string sectionName

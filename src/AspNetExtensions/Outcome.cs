@@ -24,7 +24,7 @@ namespace OsborneSupremacy.Extensions.AspNet;
 /// <typeparam name="T"></typeparam>
 public record Outcome<T>
 {
-    public bool IsSuccess { get; }
+    private bool IsSuccess { get; }
 
     public bool IsFaulted => !IsSuccess;
 
@@ -71,6 +71,7 @@ public record Outcome<T>
 
 public record Outcome
 {
+    // ReSharper disable once MemberCanBePrivate.Global
     public bool IsSuccess { get; }
 
     public bool IsFaulted => !IsSuccess;
