@@ -17,7 +17,6 @@
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>UPL-1.0</PackageLicenseExpression>
     <Authors>OsborneSupremacy</Authors>
-    <LangVersion>13</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
